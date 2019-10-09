@@ -11,3 +11,4 @@
 # Letöltés
 
 * [V1 Letöltés](https://github.com/Levminer/ALP-ASP/releases/tag/V1)
+* [V2 Letöltés](https://github.com/Levminer/ALP-ASP/releases/tag/V2)
