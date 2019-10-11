@@ -4,6 +4,8 @@
 
 @echo off
 title Aut¢matikus Le llit¢ Program V2 - K‚sz¡tette: Levminer
+cd C:\Users\%USERNAME%\AppData\Local\Temp\
+if not exist "ALP" md ALP
 cd C:\Users\%USERNAME%\AppData\Local\Temp\ALP\
 
 //color
@@ -19,13 +21,19 @@ echo Aut¢matikus Le llit¢ Program V2
 echo K‚sz¡tette: Levminer
 echo.
 echo (0) Le ll¡t s visszavon sa 
+echo.
 echo (1) Le ll¡t s 15 perc ut n
 echo (2) Le ll¡t s 30 perc ut n
 echo (3) Le ll¡t s 45 perc ut n
 echo (4) Le ll¡t s 60 perc ut n
+echo.
 echo (5) Le ll¡t s egy megadott ‚rt‚k ut n
 echo (6) Le ll¡t s az el‹z‹ megadott ‚rt‚k ut n
+echo.
+echo (7) éjraind¡t s egy megadott ‚rt‚k ut n
+echo.
 echo (8) Be ll¡t sok
+echo.
 echo (9) Kil‚p‚s
 echo.
 set /p menu="Nyomd meg a megfelel‹ gombot! (0-9) % %"
@@ -36,6 +44,7 @@ if %menu%==3 goto 3
 if %menu%==4 goto 4
 if %menu%==5 goto 5
 if %menu%==6 goto 6
+if %menu%==7 goto 7
 if %menu%==8 goto 8
 if %menu%==9 goto 9
 goto start
@@ -97,22 +106,32 @@ cls
 //megadottertek
 :5
 cls
-echo.
-set /p m="Add meg az ‚rteket percben! % %"
-set /a m1=%m%
-set /a s=%m% * 60
-cls
+set /p "m="Add meg az ‚rteket percben! % %"
+
+call :5.12 %m% || goto 5.11
+goto 5.1
+
+:5.11
+goto 5
+
+:5.12
+for /f "delims=0123456789" %%a in ("%1") do exit /b 1
+exit /b 0
 
 :5.1
+set /a m1=%m%
+set /a s= %m% * 60
+
+:5.2
 cls
-shutdown -s -t %s% -c "Le ll¡tas %m1% perc m£lva!"
+shutdown -s -t %s% -c "Le ll¡t s %m1% perc m£lva!"
 echo.
-echo Le ll¡tas %m1% perc m£lva!
+echo Le ll¡t s %m1% perc m£lva!
 echo.
 pause
 cls
 
-:5.2
+:5.3
 echo %m1% > value.txt
 goto start 
 //megadottertek
@@ -135,6 +154,39 @@ echo.
 pause
 goto start
 //elozomegadottertek
+
+//ujrainditas
+:7
+cls
+set /p "mu="Add meg az ‚rteket percben! % %"
+
+call :7.12 %mu% || goto 7.11
+goto 7.1
+
+:7.11
+goto 5
+
+:7.12
+for /f "delims=0123456789" %%a in ("%1") do exit /b 1
+exit /b 0
+
+:7.1
+set /a mu1=%mu%
+set /a su= %mu% * 60
+
+:7.2
+cls
+shutdown -r -t %su% -c "éjraind¡t s %mu1% perc m£lva!"
+echo.
+echo éjraind¡t s %mu1% perc m£lva!
+echo.
+pause
+cls
+
+:5.7
+echo %mu1% > value1.txt
+goto start 
+//ujrainditas
 
 //beallitasok
 :8
