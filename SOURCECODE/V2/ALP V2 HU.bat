@@ -106,7 +106,7 @@ cls
 //megadottertek
 :5
 cls
-set /p "m="Add meg az ‚rteket percben! % %"
+set /p "m=Add meg az ‚rteket percben! % %"
 
 call :5.12 %m% || goto 5.11
 goto 5.1
@@ -158,7 +158,7 @@ goto start
 //ujrainditas
 :7
 cls
-set /p "mu="Add meg az ‚rteket percben! % %"
+set /p "mu=Add meg az ‚rteket percben! % %"
 
 call :7.12 %mu% || goto 7.11
 goto 7.1

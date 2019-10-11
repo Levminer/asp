@@ -4,9 +4,9 @@
 
 ## Fukciók
 
-* Leállítás 15 perc, 30 perc, 45 perc, 60 perc után.
+* Leállítás 15 perc, 30 perc, 45 perc, 60 perc, után.
 * Leállítás saját érték megadása után.
-* Leállítás az előző megadott érték után
+* Leállítás az előző megadott érték után.
 * Újraindítás saját érték megadása után.
 * Betűszín beállítása.
 
