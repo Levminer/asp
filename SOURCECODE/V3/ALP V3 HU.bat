@@ -29,8 +29,8 @@ echo.
 echo (3) éjraind¡t s egyÿmegadadottÿid‹ ut nÿ
 echo (4) éjraind¡t s az el‹z‹ÿmegadadottÿid‹ ut nÿ
 echo.
-echo (5) Alv¢  llapot egy megadott id‹ ut nÿ
-echo (6) Alv¢  llapot az el‹z‹ÿmegadadottÿid‹ ut n
+echo (5) Hibern l s egy megadott id‹ ut nÿ
+echo (6) Hibern l s az el‹z‹ÿmegadadottÿid‹ ut n
 echo.
 echo (7) Be ll¡t sok
 echo (8) N‚vjegy
@@ -55,8 +55,21 @@ goto menu
 :0 
 cls
 shutdown -a 
+cls
 echo.
 echo Parancs visszavonva!
+echo.
+echo (1) Igen
+echo (2) Nem
+echo.
+set /p two="Hibern l s visszavon st akarsz l‚trehozni? (1-2) % %"
+cls
+if %two%==1 goto 0.1
+if %two%==2 goto menu
+
+:0.1
+echo.
+echo Hibern l s visszavon s l‚trhozva!
 echo.
 pause
 goto menu
@@ -103,14 +116,25 @@ goto menu
 :: 2 --------------------
 :2
 if not exist "shutdown.txt" goto menu
+cls
+echo.
+echo (1) Igen
+echo (2) Nem
+echo.
+set /p two="Folytatod? (1-2) % %"
+cls
+if %two%==1 goto 2.1
+if %two%==2 goto menu
+
+:2.1
 set file=shutdown.txt
 for /f "Delims=" %%V in (%file%) do (set ll=%%V)
 
-:2.1
+:2.2
 set /a ll1=%ll%
 set /a ll=%ll% * 60
 
-:2.2
+:2.3
 cls
 shutdown -s -t %ll% -c "Le ll¡tas %ll1% perc m£lva!"
 echo.
@@ -158,16 +182,27 @@ goto menu
 :: 3 --------------------
 
 :: 4 --------------------
-:2
+:4
 if not exist "restart.txt" goto menu
+cls
+echo.
+echo (1) Igen
+echo (2) Nem
+echo.
+set /p foure="Folytatod? (1-2) % %"
+cls
+if %foure%==1 goto 4.1
+if %foure%==2 goto menu
+
+:4.1
 set file=restart.txt
 for /f "Delims=" %%V in (%file%) do (set uu=%%V)
 
-:2.1
+:4.2
 set /a uu1=%uu%
 set /a uu=%uu% * 60
 
-:2.2
+:4.3
 cls
 shutdown -r -t %uu% -c "éjraind¡t s %uu1% perc m£lva!"
 echo.
@@ -183,10 +218,10 @@ cls
 echo.
 echo (9) Vissza
 echo.
-set /p "s=Add meg az ‚rteket percben! (0-9) % %"
-if %s%==9 goto menu
+set /p "h=Add meg az ‚rteket percben! (0-9) % %"
+if %h%==9 goto menu
 
-call :5.12 %s% || goto 5.11
+call :5.12 %h% || goto 5.11
 goto 5.1
 
 :5.11
@@ -197,40 +232,64 @@ for /f "delims=0123456789" %%a in ("%1") do exit /b 1
 exit /b 0
 
 :5.1
-set /a s1=%s%
-set /a s= %s% * 60
+set /a h1=%h%
+set /a h= %h% * 60
 
 :5.2
 cls
-shutdown -h -t %s% -c "Alv¢  llapot %s1% perc m£lva!"
 echo.
-echo Alv¢  llapot %s1% perc m£lva!
+echo Hibern l s %h1% perc m£lva!
 echo.
 pause
 cls
 
 :5.3
-echo %s1% > sleep.txt
+echo %h1% > hibernate.txt
+
+
+:5.4
+:: kicser‚l‚s %MYFILES%
+cd C:\Users\%USERNAME%\AppData\Local\Temp\ALPTEST
+:: kicser‚l‚s %MYFILES%
+start hibernate.bat
+cd C:\Users\%USERNAME%\AppData\Local\Temp\ALP\
 goto menu
 :: 5 --------------------
 
 :: 6 --------------------
 :6
-if not exist "sleep.txt" goto menu
-set file=sleep.txt
-for /f "Delims=" %%V in (%file%) do (set ss=%%V)
-
-:2.1
-set /a ss1=%ss%
-set /a ss=%ss% * 60
-
-:2.2
+if not exist "hibernate.txt" goto menu
 cls
-shutdown -h -t %ss% -c "Alv¢  llapot %ss1% perc m£lva!"
 echo.
-echo Alv¢  llapot %ss1% perc m£lva!
+echo (1) Igen
+echo (2) Nem
+echo.
+set /p six="Folytatod? (1-2) % %"
+cls
+if %six%==1 goto 6.1
+if %six%==2 goto menu
+
+:6.1
+set file=hibernate.txt
+for /f "Delims=" %%V in (%file%) do (set hh=%%V)
+
+:6.2
+set /a hh1=%hh%
+set /a hh=%hh% * 60
+
+:6.3
+cls
+echo.
+echo Hibern l s %hh1% perc m£lva!
 echo.
 pause
+
+:6.4
+:: kicser‚l‚s %MYFILES%
+cd C:\Users\%USERNAME%\AppData\Local\Temp\ALPTEST
+:: kicser‚l‚s %MYFILES%
+start hibernate.bat
+cd C:\Users\%USERNAME%\AppData\Local\Temp\ALP\
 goto menu
 :: 6 --------------------
 

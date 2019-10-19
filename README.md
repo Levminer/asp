@@ -4,16 +4,19 @@
 
 ## Fukciók
 
-* Leállítás 15 perc, 30 perc, 45 perc, 60 perc, után.
 * Leállítás saját érték megadása után.
 * Leállítás az előző megadott érték után.
 * Újraindítás saját érték megadása után.
+* Újraindítás az előző megadott érték után.
+* Hibernálás egy megadott idő után 
+* Hibernálás az előző megadott idő után 
 * Betűszín beállítása.
 
 ## Letöltés
 
 * [V1 Letöltés](https://github.com/Levminer/ALP-ASP/releases/tag/V1)
 * [V2 Letöltés](https://github.com/Levminer/ALP-ASP/releases/tag/V2)
+* [V3 Letöltés](https://github.com/Levminer/ALP-ASP/releases/tag/V3)
 
 # Automatic Shutdown Program
 
