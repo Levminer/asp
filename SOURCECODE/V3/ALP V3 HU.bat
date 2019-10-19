@@ -202,7 +202,7 @@ set /a s= %s% * 60
 
 :5.2
 cls
-shutdown -f -t %s% -c "Alv¢  llapot %s1% perc m£lva!"
+shutdown -h -t %s% -c "Alv¢  llapot %s1% perc m£lva!"
 echo.
 echo Alv¢  llapot %s1% perc m£lva!
 echo.
@@ -226,7 +226,7 @@ set /a ss=%ss% * 60
 
 :2.2
 cls
-shutdown -f -t %ss% -c "Alv¢  llapot %ss1% perc m£lva!"
+shutdown -h -t %ss% -c "Alv¢  llapot %ss1% perc m£lva!"
 echo.
 echo Alv¢  llapot %ss1% perc m£lva!
 echo.
