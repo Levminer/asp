@@ -54,7 +54,6 @@ title Automatic Shutdown Program V4 - Cancel command - Created by: Levminer
 cls
 shutdown -a 
 cls
-echo.
 echo Command canceled
 echo.
 pause
@@ -119,7 +118,7 @@ exit /b 0
 
 :2.1
 set /a l1=%l%
-set /a l= %l% / 60
+set /a l= %l% * 60
 
 :2.2
 cls
@@ -156,7 +155,7 @@ exit /b 0
 
 :3.1
 set /a l1=%l%
-set /a l= %l% / 3600
+set /a l= %l% * 3600
 
 :3.2
 cls
@@ -230,7 +229,7 @@ exit /b 0
 
 :5.1
 set /a l1=%l%
-set /a l= %l% / 60
+set /a l= %l% * 60
 
 :5.2
 cls
@@ -267,7 +266,7 @@ exit /b 0
 
 :6.1
 set /a l1=%l%
-set /a l= %l% / 3600
+set /a l= %l% * 3600
 
 :6.2
 cls

@@ -4,8 +4,8 @@
 
 ## Functions
 
-- Shutdown after a give time (seconds,minutes,hours)
-- Restart after a give time (seconds,minutes,hours)
+- Shutdown after a give time (seconds, minutes, hours)
+- Restart after a give time (seconds, minutes, hours)
 
 ## Download
 

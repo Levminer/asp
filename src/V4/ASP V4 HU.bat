@@ -54,7 +54,6 @@ title Automatic Shutdown Program V4 - Parancs visszavon sa - K‚sz¡tette: Levmine
 cls
 shutdown -a 
 cls
-echo.
 echo Parancs visszavon sa
 echo.
 pause
@@ -86,9 +85,9 @@ set /a l= %l%
 
 :1.2
 cls
-shutdown -s -t %l% -c "Le ll¡t s in %l1% m sodperc m£lva!"
+shutdown -s -t %l% -c "Le ll¡t s %l1% m sodperc m£lva!"
 echo.
-echo Le ll¡t s in %l1% m sodperc m£lva!
+echo Le ll¡t s %l1% m sodperc m£lva!
 echo.
 pause
 cls
@@ -119,13 +118,13 @@ exit /b 0
 
 :2.1
 set /a l1=%l%
-set /a l= %l% / 60
+set /a l= %l% * 60
 
 :2.2
 cls
-shutdown -s -t %l% -c "Le ll¡t s in %l1% perc m£lva!"
+shutdown -s -t %l% -c "Le ll¡t s %l1% perc m£lva!"
 echo.
-echo Le ll¡t s in %l1% perc m£lva!
+echo Le ll¡t s %l1% perc m£lva!
 echo.
 pause
 cls
@@ -156,13 +155,13 @@ exit /b 0
 
 :3.1
 set /a l1=%l%
-set /a l= %l% / 3600
+set /a l= %l% * 3600
 
 :3.2
 cls
-shutdown -s -t %l% -c "Le ll¡t s in %l1% ¢ra m£lva!"
+shutdown -s -t %l% -c "Le ll¡t s %l1% ¢ra m£lva!"
 echo.
-echo Le ll¡t s in %l1% ¢ra m£lva!
+echo Le ll¡t s %l1% ¢ra m£lva!
 echo.
 pause
 cls
@@ -197,9 +196,9 @@ set /a l= %l%
 
 :4.2
 cls
-shutdown -s -t %l% -c "éjraind¡t s in %l1% m sodperc m£lva!"
+shutdown -s -t %l% -c "éjraind¡t s %l1% m sodperc m£lva!"
 echo.
-echo éjraind¡t s in %l1% m sodperc m£lva!
+echo éjraind¡t s %l1% m sodperc m£lva!
 echo.
 pause
 cls
@@ -230,13 +229,13 @@ exit /b 0
 
 :5.1
 set /a l1=%l%
-set /a l= %l% / 60
+set /a l= %l% * 60
 
 :5.2
 cls
-shutdown -s -t %l% -c "éjraind¡t s in %l1% perc m£lva!"
+shutdown -s -t %l% -c "éjraind¡t s %l1% perc m£lva!"
 echo.
-echo éjraind¡t s in %l1% perc m£lva!
+echo éjraind¡t s %l1% perc m£lva!
 echo.
 pause
 cls
@@ -267,13 +266,13 @@ exit /b 0
 
 :6.1
 set /a l1=%l%
-set /a l= %l% / 3600
+set /a l= %l% * 3600
 
 :6.2
 cls
-shutdown -s -t %l% -c "éjraind¡t s in %l1% ¢ra m£lva!"
+shutdown -s -t %l% -c "éjraind¡t s %l1% ¢ra m£lva!"
 echo.
-echo éjraind¡t s in %l1% ¢ra m£lva!
+echo éjraind¡t s %l1% ¢ra m£lva!
 echo.
 pause
 cls
