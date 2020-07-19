@@ -1,32 +1,23 @@
-# Autómatikus Leállító Program
-
-* Egy nagyon egyszerű parancssor alapú program ami a megfelelő gomb lenyomása után leállítja a számítógépet egy megadott idő után.
-
-## Fukciók
-
-* Leállítás saját érték megadása után.
-* Leállítás az előző megadott érték után.
-* Újraindítás saját érték megadása után.
-* Újraindítás az előző megadott érték után.
-* Hibernálás egy megadott idő után 
-* Hibernálás az előző megadott idő után 
-* Betűszín beállítása.
-
-## Letöltés
-
-* [V1 Letöltés](https://github.com/Levminer/ALP-ASP/releases/tag/V1)
-* [V2 Letöltés](https://github.com/Levminer/ALP-ASP/releases/tag/V2)
-* [V3 Letöltés](https://github.com/Levminer/ALP-ASP/releases/tag/V3)
-
 # Automatic Shutdown Program
 
-* A very simple command line program that turns off the computer in a given time.
+- A very simple CLI that shuts down or restarts the computer after a specified time.
 
 ## Functions
 
-* Shutdown in 15, 30, 45, 60, minutes.
-* Shutdown by costum value.
+- Shutdown after a give time (seconds,minutes,hours)
+- Restart after a give time (seconds,minutes,hours)
 
 ## Download
 
-* [V1 Download](https://github.com/Levminer/ALP-ASP/releases/tag/V1)
+- [Download V1 (HU-EN)](https://github.com/Levminer/ALP-ASP/releases/tag/V1)
+- [Download V2 (HU)](https://github.com/Levminer/ALP-ASP/releases/tag/V2)
+- [Download V3 (HU)](https://github.com/Levminer/ALP-ASP/releases/tag/V3)
+- [Download V4 (HU-EN)](https://github.com/Levminer/ALP-ASP/releases/tag/V4)
+
+## Converted with
+
+- [Advanced BAT to EXE Converter](https://www.battoexeconverter.com/#downloadbattoexe)
+
+## License
+
+- CC-BY-SA-4.0
