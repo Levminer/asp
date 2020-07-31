@@ -16,7 +16,7 @@
 
 ## Converted with
 
-- [Advanced BAT to EXE Converter](https://www.battoexeconverter.com/#downloadbattoexe)
+- [Bat To Exe Converter](https://www.majorgeeks.com/files/details/bat_to_exe_converter.html)
 
 ## License
 

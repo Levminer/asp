@@ -321,7 +321,7 @@ title Automatic Shutdown Program V4 - About - Created by: Levminer
 cls
 echo (9) Back
 echo.
-echo Automatic Shutdown Program V3
+echo Automatic Shutdown Program V4
 echo.
 echo Created by: Levminer
 echo Code editor: Visual Studio Code

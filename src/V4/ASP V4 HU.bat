@@ -15,9 +15,9 @@ for /f "tokens=*" %%C in (%file%) do (%%C)
 :: menu
 :menu
 cls
-title Automatic Shutdown Program V4 - Menu - K‚sz¡tette: Levminer
+title Automatic Shutdown Program V4 - Menu - Created by: Levminer
 echo Automatic Shutdown Program V4
-echo K‚sz¡tette: Levminer
+echo Created by: Levminer
 echo.
 echo (0) Parancs visszavon sa
 echo.
@@ -50,7 +50,7 @@ goto menu
 
 :: 0 --------------------
 :0 
-title Automatic Shutdown Program V4 - Parancs visszavon sa - K‚sz¡tette: Levminer
+title Automatic Shutdown Program V4 - Parancs visszavon sa - Created by: Levminer
 cls
 shutdown -a 
 cls
@@ -62,7 +62,7 @@ goto menu
 
 :: 1 --------------------
 :1
-title Automatic Shutdown Program V4 - Le ll¡t s egy adott id‹ ut n (m sodperc) - K‚sz¡tette: Levminer
+title Automatic Shutdown Program V4 - Le ll¡t s egy adott id‹ ut n (m sodperc) - Created by: Levminer
 cls
 echo (9) Vissza
 echo.
@@ -99,7 +99,7 @@ goto menu
 
 :: 2 --------------------
 :2
-title Automatic Shutdown Program V4 - Le ll¡t s egy adott id‹ ut n (perc) - K‚sz¡tette: Levminer
+title Automatic Shutdown Program V4 - Le ll¡t s egy adott id‹ ut n (perc) - Created by: Levminer
 cls
 echo (9) Vissza
 echo.
@@ -135,7 +135,7 @@ goto menu
 :: 2 --------------------
 
 :: 3 --------------------
-title Automatic Shutdown Program V4 - Le ll¡t s egy adott id‹ ut n (¢ra) - K‚sz¡tette: Levminer
+title Automatic Shutdown Program V4 - Le ll¡t s egy adott id‹ ut n (¢ra) - Created by: Levminer
 :3
 cls
 echo (9) Vissza
@@ -173,7 +173,7 @@ goto menu
 
 :: 4 --------------------
 :4
-title Automatic Shutdown Program V4 - éjraind¡t s egy adott id‹ ut n (m sodperc) - K‚sz¡tette: Levminer
+title Automatic Shutdown Program V4 - éjraind¡t s egy adott id‹ ut n (m sodperc) - Created by: Levminer
 cls
 echo (9) Vissza
 echo.
@@ -210,7 +210,7 @@ goto menu
 
 :: 5 --------------------
 :5
-title Automatic Shutdown Program V4 - éjraind¡t s egy adott id‹ ut n (perc) - K‚sz¡tette: Levminer
+title Automatic Shutdown Program V4 - éjraind¡t s egy adott id‹ ut n (perc) - Created by: Levminer
 cls
 echo (9) Vissza
 echo.
@@ -246,7 +246,7 @@ goto menu
 :: 5 --------------------
 
 :: 6 --------------------
-title Automatic Shutdown Program V4 - éjraind¡t s egy adott id‹ ut n (¢ra) - K‚sz¡tette: Levminer
+title Automatic Shutdown Program V4 - éjraind¡t s egy adott id‹ ut n (¢ra) - Created by: Levminer
 :6
 cls
 echo (9) Vissza
@@ -284,7 +284,7 @@ goto menu
 
 :: 7 --------------------
 :7
-title Automatic Shutdown Program V4 - Be ll¡t sok - K‚sz¡tette: Levminer
+title Automatic Shutdown Program V4 - Be ll¡t sok - Created by: Levminer
 cls
 echo (9) Vissza
 echo.
@@ -317,13 +317,13 @@ goto menu
 
 :: 8 --------------------
 :8
-title Automatic Shutdown Program V4 - N‚vjegy - K‚sz¡tette: Levminer
+title Automatic Shutdown Program V4 - N‚vjegy - Created by: Levminer
 cls
 echo (9) Vissza
 echo.
-echo Automatic Shutdown Program V3
+echo Automatic Shutdown Program V4
 echo.
-echo K‚sz¡tette: Levminer
+echo Created by: Levminer
 echo Code szerkeszt‹: Visual Studio Code
 echo GitHub kliens: GitHub Desktop
 echo. 

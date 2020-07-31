@@ -3,7 +3,6 @@
 
 :: start
 @echo off
-title Automatic Shutdown Program V4 - Choose language / V lassz nyelvet - Created by: Levminer
 set mypath=%cd%
 cd C:\Users\%USERNAME%\AppData\Local\ALP
 if not exist "ALP" md ALP
@@ -22,6 +21,7 @@ cd %MYFILES%
 :: menu
 :menu
 cls
+title Automatic Shutdown Program V4 - Choose language / V lassz nyelvet - Created by: Levminer
 echo Automatic Shutdown Program V4
 echo Created by: Levminer / K‚sz¡tette: Levminer
 echo.
@@ -45,7 +45,7 @@ cls
 
 :: cancel command
 :0 
-title Automatic Shutdown Program V4 - Cancel command - Created by: Levminer
+title Automatic Shutdown Program V4 - Cancel command / Parancs visszavon sa - Created by: Levminer
 cls
 shutdown -a 
 cls
